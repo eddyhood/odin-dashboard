@@ -65,7 +65,10 @@ nav>ul>li>i {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
         "search notifications" 
-        "welcome buttons"
+        "welcome buttons";
+    align-items: center;
+    margin: 20px 0px;
+    gap: 30px;
 }
 
 #search-bar {
@@ -74,10 +77,39 @@ nav>ul>li>i {
 
 #notifications {
     grid-area: notifications;
+    display: flex;
+    align-items: center;
 }
 #welcome {
     grid-area: welcome;
+    display: flex;
+    align-items: center;
 }
 #buttons{
     grid-area: buttons;
 }
+
+#search-bar {
+    width: 80%;
+    border-radius: 28px;
+    border: none;
+    background-color: var(--light-gray-color);
+    padding: 7px;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--brand-color);
+    color: var(--text-color);
+    font-size: .75rem;
+    padding: 9px;
+    font-weight: 600;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+
+/*main*/
