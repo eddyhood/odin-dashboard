@@ -21,3 +21,16 @@ body {
     font-family: 'Radio Canada', sans-serif;
     height: 100vh;
 }
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid var(--light-gray-color)
+}
+.user-avatar {
+    
+
+ 
+}
