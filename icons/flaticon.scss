@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?6de7daee1bdbc4ad3d6001b21f38ad0a") format("truetype"),
-url("./flaticon.woff?6de7daee1bdbc4ad3d6001b21f38ad0a") format("woff"),
-url("./flaticon.woff2?6de7daee1bdbc4ad3d6001b21f38ad0a") format("woff2"),
-url("./flaticon.eot?6de7daee1bdbc4ad3d6001b21f38ad0a#iefix") format("embedded-opentype"),
-url("./flaticon.svg?6de7daee1bdbc4ad3d6001b21f38ad0a#flaticon") format("svg");
+    src: url("./flaticon.ttf?ecb50283fc32afffb7afadec1d7fc298") format("truetype"),
+url("./flaticon.woff?ecb50283fc32afffb7afadec1d7fc298") format("woff"),
+url("./flaticon.woff2?ecb50283fc32afffb7afadec1d7fc298") format("woff2"),
+url("./flaticon.eot?ecb50283fc32afffb7afadec1d7fc298#iefix") format("embedded-opentype"),
+url("./flaticon.svg?ecb50283fc32afffb7afadec1d7fc298#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,17 +21,15 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "home": "\f101",
-    "user": "\f102",
-    "location": "\f103",
-    "settings": "\f104",
-    "hotel-bell": "\f105",
-    "logout": "\f106",
+    "user": "\f101",
+    "location": "\f102",
+    "settings": "\f103",
+    "hotel-bell": "\f104",
+    "logout": "\f105",
+    "home": "\f106",
+    "magnifying-glass": "\f107",
 );
 
-.flaticon-home:before {
-    content: map-get($flaticon-map, "home");
-}
 .flaticon-user:before {
     content: map-get($flaticon-map, "user");
 }
@@ -46,4 +44,10 @@ $flaticon-map: (
 }
 .flaticon-logout:before {
     content: map-get($flaticon-map, "logout");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
 }
