@@ -15,6 +15,14 @@
         --light-gray-color: #D9D9D9;
     }
 
+    h2, h3, table, #tips, #activity {
+        color: var(--bg-color);
+    }
+
+    #notifications>h3 {
+        color: var(--text-color);
+    }
+
 }
 
 body {
@@ -64,6 +72,7 @@ figure {
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-color);
+    padding-top: 20px;
 }
 
 nav>ul>li {
@@ -77,6 +86,7 @@ nav>ul>li>i {
 /*Header styling */
 
 #header {
+    background-color: var(--bg-color);
     display: grid;
     grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -84,7 +94,7 @@ nav>ul>li>i {
         "search notifications" 
         "welcome buttons";
     align-items: center;
-    margin: 20px 0px;
+    padding: 20px 0px 20px 0px;
     gap: 30px;
 }
 
