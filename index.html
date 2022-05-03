@@ -14,7 +14,8 @@
 </head>
 <body>
     <section id="sidebar">
-        <figure>
+        <figure id="logo-section">
+            <div id="hamburger-menu"><i class="flaticon-square"></i></div>
             <img src="./images/Dollarwich - Light-no-text.png" alt="A logo of a sandwich" id="logo">
         </figure>
         <nav>
@@ -30,7 +31,7 @@
     </section>
     <section id="main">
         <section id="header">
-            <form action="" method="post">
+            <form action="" method="post" id="search-tool">
                 <label for="search-bar"><i class="flaticon-magnifying-glass"></i></label>
                 <input type="search" name="search" id="search-bar">
             </form>
@@ -52,7 +53,7 @@
                     <p id="user-name">Eddy Hood</p>
                 </article>
             </section>
-            <section id="buttons">
+            <section class="buttons" id="full-screen-buttons">
                 <button><i class="flaticon-plus"></i> Sandwich</button>
                 <button><i class="flaticon-plus"></i> Ingredient</button>
                 <button><i class="flaticon-plus"></i> Invoice</button>
@@ -60,62 +61,73 @@
         </section>
         <section id="entries-body">
             <section id="entries">
-                <h2>Profit Menu</h2>
+                <section id="menu-head">
+                    <h2>Profit Menu</h2>
+                    <section class="buttons" id="menu-buttons">
+                        <button><i class="flaticon-plus"></i> Sandwich</button>
+                        <button><i class="flaticon-plus"></i> Ingredient</button>
+                        <button><i class="flaticon-plus"></i> Invoice</button>
+                    </section>
+                </section>
                 <Table>
-                    <tr>
-                        <th class="sandwich-name">Sandwich</th>
-                        <th class="nums">Cost</th>
-                        <th class="nums">Price</th>
-                        <th class="nums">Profit</th>
-                        <th class="percent">Margin</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                    <tr>
-                        <td class="sandwich-name">Ham and Cheese</td>
-                        <td class="nums">5.00</td>
-                        <td class="nums">3.5</td>
-                        <td class="nums">1.5</td>
-                        <td class="percent">30%</td>
-                        <td class="edit-icons"><i class="flaticon-pen"></i></td>
-                        <td class="edit-icons"><i class="flaticon-delete"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="sandwich-name">Cheese Melt</td>
-                        <td class="nums">6.50</td>
-                        <td class="nums">2.5</td>
-                        <td class="nums">4</td>
-                        <td class="percent">67%</td>
-                        <td class="edit-icons"><i class="flaticon-pen"></i></td>
-                        <td class="edit-icons"><i class="flaticon-delete"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="sandwich-name">Turkey, Bacon, Avacado</td>
-                        <td class="nums">8.00</td>
-                        <td class="nums">4.75</td>
-                        <td class="nums">3.25</td>
-                        <td class="percent">40%</td>
-                        <td class="edit-icons"><i class="flaticon-pen"></i></td>
-                        <td class="edit-icons"><i class="flaticon-delete"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="sandwich-name">Veggie</td>
-                        <td class="nums">5.50</d>
-                        <td class="nums">2.75</td>
-                        <td class="nums">2.75</td>
-                        <td class="percent">50%</td>
-                        <td class="edit-icons"><i class="flaticon-pen"></i></td>
-                        <td class="edit-icons"><i class="flaticon-delete"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="sandwich-name">Ruben</td>
-                        <td class="nums">7.00</td>
-                        <td class="nums">4.0</td>
-                        <td class="nums">3.00</td>
-                        <td class="percent">43%</td>
-                        <td class="edit-icons"><i class="flaticon-pen"></i></td>
-                        <td class="edit-icons"><i class="flaticon-delete"></i></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th class="sandwich-name">Sandwich</th>
+                            <th class="nums">Cost</th>
+                            <th class="nums">Price</th>
+                            <th class="nums">Profit</th>
+                            <th class="percent">Margin</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sandwich-name">Ham and Cheese</td>
+                            <td class="nums">5.00</td>
+                            <td class="nums">3.5</td>
+                            <td class="nums">1.5</td>
+                            <td class="percent">30%</td>
+                            <td class="edit-icons"><i class="flaticon-pen"></i></td>
+                            <td class="edit-icons"><i class="flaticon-delete"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="sandwich-name">Cheese Melt</td>
+                            <td class="nums">6.50</td>
+                            <td class="nums">2.5</td>
+                            <td class="nums">4</td>
+                            <td class="percent">67%</td>
+                            <td class="edit-icons"><i class="flaticon-pen"></i></td>
+                            <td class="edit-icons"><i class="flaticon-delete"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="sandwich-name">Turkey, Bacon, Avacado</td>
+                            <td class="nums">8.00</td>
+                            <td class="nums">4.75</td>
+                            <td class="nums">3.25</td>
+                            <td class="percent">40%</td>
+                            <td class="edit-icons"><i class="flaticon-pen"></i></td>
+                            <td class="edit-icons"><i class="flaticon-delete"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="sandwich-name">Veggie</td>
+                            <td class="nums">5.50</d>
+                            <td class="nums">2.75</td>
+                            <td class="nums">2.75</td>
+                            <td class="percent">50%</td>
+                            <td class="edit-icons"><i class="flaticon-pen"></i></td>
+                            <td class="edit-icons"><i class="flaticon-delete"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="sandwich-name">Ruben</td>
+                            <td class="nums">7.00</td>
+                            <td class="nums">4.0</td>
+                            <td class="nums">3.00</td>
+                            <td class="percent">43%</td>
+                            <td class="edit-icons"><i class="flaticon-pen"></i></td>
+                            <td class="edit-icons"><i class="flaticon-delete"></i></td>
+                        </tr>
+                    </tbody>
                 </Table>
             </section>
             <aside id="updates">

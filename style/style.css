@@ -116,7 +116,7 @@ nav>ul>li>i {
     display: flex;
     align-items: center;
 }
-#buttons{
+.buttons{
     grid-area: buttons;
     display: flex;
     justify-content: flex-start;
@@ -153,6 +153,20 @@ button {
     gap: 5px;
 
 }
+#menu-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#menu-buttons {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
 
 #entries, #updates {
     padding: 20px;
@@ -169,6 +183,11 @@ th {
 td {
     padding: 7px;
 }
+
+th, td {
+    padding: 10px 6px;
+}
+
 
 .nums, .percent {
     text-align: right;
@@ -215,4 +234,78 @@ tr:nth-child(odd) {
 .edit-icons {
     text-align: center;
     vertical-align: middle;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1300px) {
+    #full-screen-buttons {
+        display: none;
+    }
+
+    #menu-buttons {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 25%;
+    }
+
+    #hamburger-menu {
+        display: block;
+        font-size: 30px;
+        align-self: flex-end;
+        margin-right: 50px;
+    }
+
+    #logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav, #welcome, #notifications {
+        display: none;
+    }
+
+    #entries-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    thead, tbody {
+        padding: 0px 20px;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #search-tool {
+        width: 75%;
+    }
+
+    #menu-head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        font-size: .75rem;
+    }
+
+    th, td {
+        padding: 10px 6px;
+    }
 }
